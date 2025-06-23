@@ -1,23 +1,23 @@
 # GCP Yellow Taxi Data Pipeline
 
-This is a hands-on data engineering project where I built a full pipeline to ingest, store, and analyze NYC Yellow Taxi trip data using **Google Cloud Platform (GCP)**. The project simulates a production-grade ingestion and warehousing process using **Terraform**, **Python**, and **BigQuery**.
+This is a hands-on data engineering project where I built a complete pipeline to bring in, store, and analyze NYC Yellow Taxi trip data using Google Cloud Platform (GCP). The goal was to mimic a real-world production setup for data ingestion and warehousing using tools like Terraform, Python, and BigQuery.
 
----
+## Project Overview
 
-## 📦 Project Overview
+I automated the process of loading Yellow Taxi data into Google Cloud Storage (GCS), then moved that data into BigQuery, creating both external tables (that read directly from GCS) and internal tables (stored in BigQuery). I also worked on improving query speed by using partitioning and clustering. Finally, I ran some SQL queries to explore trip patterns and check how well the optimizations worked.
 
-This project automates the ingestion of Yellow Taxi data into Google Cloud Storage (GCS), loads it into BigQuery as both external and internal tables, and optimizes performance using **partitioning** and **clustering**. SQL queries are then used to analyze trip patterns and query performance.
 
 **What this project does:**
-- Provisions GCS bucket and BigQuery dataset using **Terraform**
-- Downloads Yellow Taxi data and uploads it as Parquet to **GCS**
-- Creates **external** and **internal** BigQuery tables
-- Optimizes the internal table using **partitioning** and **clustering**
-- Runs SQL queries to demonstrate data insights and query efficiency
+- **Terraform**: set up GCS bucket and BigQuery dataset
+- Used Python to download Yellow Taxi data and upload it as Parquet files to GCS
+- Created both external and internal tables in BigQuery
+- Improved query speed by applying partitioning and clustering on the internal tables
+- Ran SQL queries to explore the data and show how the optimizations help with query performance
 
----
 
-## 🛠️ Tech Stack
+
+
+## Tech Used
 
 - **Terraform** – Infrastructure as Code (IaC) for provisioning GCP resources
 - **Google Cloud Storage (GCS)** – Cloud object storage for raw files
@@ -26,9 +26,8 @@ This project automates the ingestion of Yellow Taxi data into Google Cloud Stora
 - **SQL** – For querying and data analysis
 - **Parquet** – Columnar storage format for performance
 
----
 
-## ⚙️ Steps to Build the Pipeline
+## Steps to Build the Pipeline
 
 ### Step 1: Provision Infrastructure with Terraform
 
