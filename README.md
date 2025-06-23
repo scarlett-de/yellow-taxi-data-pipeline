@@ -6,17 +6,6 @@ This is a hands-on data engineering project where I built a complete pipeline to
 
 I automated the process of loading Yellow Taxi data into Google Cloud Storage (GCS), then moved that data into BigQuery, creating both external tables (that read directly from GCS) and internal tables (stored in BigQuery). I also worked on improving query speed by using partitioning and clustering. Finally, I ran some SQL queries to explore trip patterns and check how well the optimizations worked.
 
-
-**What this project does:**
-- **Terraform**: set up GCS bucket and BigQuery dataset
-- Used Python to download Yellow Taxi data and upload it as Parquet files to GCS
-- Created both external and internal tables in BigQuery
-- Improved query speed by applying partitioning and clustering on the internal tables
-- Ran SQL queries to explore the data and show how the optimizations help with query performance
-
-
-
-
 ## Tech Used
 
 - **Terraform** – Infrastructure as Code (IaC) for provisioning GCP resources
@@ -31,7 +20,7 @@ I automated the process of loading Yellow Taxi data into Google Cloud Storage (G
 
 ### Step 1: Provision Infrastructure with Terraform
 
-- Define your GCS bucket and BigQuery dataset using Terraform files: `main.tf`, `variables.tf`, and `outputs.tf`
+- Define GCS bucket and BigQuery dataset using Terraform files: `main.tf`, `variables.tf`, and `outputs.tf`
 - Run the following commands:
 
 ```bash
