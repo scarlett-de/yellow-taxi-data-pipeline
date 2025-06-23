@@ -73,7 +73,7 @@ PARTITION BY DATE(tpep_dropoff_datetime)
 CLUSTER BY VendorID as (
  SELECT * FROM `demo_dataset_hw3.yellow_taxi_table`)
 ```
-<img src="https://github.com/user-attachments/assets/f75131bf-b46b-4d96-93b2-85663d64f41d" alt="image" width="600">
+<img src="https://github.com/user-attachments/assets/f75131bf-b46b-4d96-93b2-85663d64f41d" alt="image" width="400">
 
 
 
