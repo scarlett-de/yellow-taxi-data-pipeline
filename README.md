@@ -46,7 +46,7 @@ Note: I place my GCP service account key JSON file in the project folder as gcs.
 
 then run the below command to run the python script to download and load data
 ```ssh
-python3 /Users/yitian66/Documents/DE-Datacamp/Homework3/load_yellow_taxi_data_2024.py
+python3 /Users/yitian66/Documents/DE_Projects/Project2/load_yellow_taxi_data_2024.py
 ```
 
 ## Step 4: Create BigQuery tables
